@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary Prediction</title>
+</head>
+<body>
+    <h1>Predict Employee Salary</h1>
+    <form method="POST" action="/predict">
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Education Level (1=10th, 2=12th, 3=Degree):</label><br>
+        <input type="number" name="education" required><br><br>
+
+        <label>Occupation (1=IT, 2=Teacher, 3=Engineer):</label><br>
+        <input type="number" name="occupation" required><br><br>
+
+        <label>Experience (years):</label><br>
+        <input type="number" name="experience" required><br><br>
+
+        <label>Hours per week:</label><br>
+        <input type="number" name="hours" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h2>{{ prediction }}</h2>
+</body>
+</html>
